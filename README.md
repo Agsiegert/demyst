@@ -10,3 +10,5 @@ to the file you wish to inspect, requiring pry will not be necessary.
 Throughout the book there may be instances where you need to create a file or folder
 that is referenced in the book.  If you don't see that file in this template app, then
 create it yourself under the directory specified in the chapter text.
+
+https://launchschool.com/books/demystifying_rails/read/expanded_encapsulation_through_our_models
