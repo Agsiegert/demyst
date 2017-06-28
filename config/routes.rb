@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  get '/hello_world' => 'application#hello_world'
+  get '/hello/:name' => 'application#hello_world'
+
+  get '/list_posts' => 'application#list_posts'
+  get 'show_post/:id' => 'application#show_post'
+
+  get '/new_post' => 'application#new_post'
+  post '/create_post' => 'application#create_post'
+
+  get 'edit_post/:id' => 'application#edit_post'
+  post '/update_post/:id' => 'application#update_post'
+
+  post 'delete_post/:id' => 'application#delete_post'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -7,7 +20,6 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
